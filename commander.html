@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<script language=javascript src="controle.js"></script>
+</head>
+
+<body onload="fillDateAndTime()">
+
+<form method="POST" name="f" action="commander.php" onsubmit="return verif2()">
+
+	<fieldset style="padding: 2">
+	<legend align="center"><b><span style="font-size: 16pt">Vente en ligne</span></b></legend>
+&nbsp;<p>&nbsp;&nbsp;&nbsp;&nbsp; <b>Date</b>: <input type="text" name="T1" size="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<b>Heure</b>: <input type="text" name="T2" size="20"></p>
+	<p>
+	----------------------------------------------------------------------------</p>
+	<p>&nbsp; <select size="1" name="D1">
+	<option value="Séléctionner un article">Séléctionner un article</option>
+	<option value="Disque dur externe, capacité 1 To">Disque dur externe, capacité 1 To
+	</option>
+	<option value="Imprimante jet d'encre, vitesse 10 ppm">Imprimante jet d'encre, vitesse 10 ppm
+	</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Qté: <input type="button" name="B3" onclick="decrementer(f.T3);" value="-">&nbsp;<input type="text" name="T3" size="6" value="0">
+	<input type="button" name="B3" onclick="incrementer(f.T3);" value="+"></p>
+	<p>&nbsp; <select size="1" name="D2">
+	<option value="Séléctionner un article">Séléctionner un article</option>
+	<option value="Disque dur externe, capacité 1 To">Disque dur externe, capacité 1 To
+	</option>
+	<option value="Imprimante jet d'encre, vitesse 10 ppm">Imprimante jet d'encre, vitesse 10 ppm
+	</option>
+	</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Qté: <input type="button" onclick="decrementer(f.T4);" value="-" name="B5">&nbsp;<input type="text" name="T4" size="6" value="0">
+	<input type="button" value="+" onclick="incrementer(f.T4);" name="B6"></p>
+	<p>&nbsp;<b>Code client:&nbsp; </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" name="T5" size="20"></p>
+	<p>&nbsp;<b>Mot de passe:&nbsp; </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="password" name="T6" size="20"></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="reset" value="Annuler" name="B2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" value="Commander" name="B1"></p>
+	<p>&nbsp;</p>
+	</fieldset></form>
+
+</body>
+
+</html>
